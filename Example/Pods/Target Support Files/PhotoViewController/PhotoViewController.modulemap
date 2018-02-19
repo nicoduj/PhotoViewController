@@ -1,0 +1,6 @@
+framework module PhotoViewController {
+  umbrella header "PhotoViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
