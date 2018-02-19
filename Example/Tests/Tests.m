@@ -7,9 +7,36 @@
 //
 
 // https://github.com/Specta/Specta
+#import <PhotoViewController/PhotoViewController.h>
+
 
 SpecBegin(InitialSpecs)
 
+__block PhotoViewController*  pvc;
+
+describe(@"Verify that view is loaded", ^{
+    
+    before(^{
+        pvc = (PhotoViewController*)[UIApplication sharedApplication].keyWindow.rootViewController;
+    });
+    
+    it(@"Verifying the valid views", ^{
+
+        XCTAssertNotNil(pvc.view);
+    });
+    
+    it(@"Verifying that the image is set", ^{
+        XCTAssertNotNil(pvc.myImage);
+    });
+    
+    it(@"Verifying that the image is set in the view", ^{
+        XCTAssert(pvc.myView.subviews.count > 0);
+    });
+    
+    
+});
+
+/*
 describe(@"these will fail", ^{
 
     it(@"can do maths", ^{
@@ -43,6 +70,7 @@ describe(@"these will pass", ^{
         });
     });
 });
+ */
 
 SpecEnd
 
