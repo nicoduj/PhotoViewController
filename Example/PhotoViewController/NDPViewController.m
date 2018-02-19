@@ -18,12 +18,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.myView = self.mainView;
+    self.myImage = [UIImage imageNamed:@"40110298232_4e9c412936_o.jpg"];
+
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

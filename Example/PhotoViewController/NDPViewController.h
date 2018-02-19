@@ -8,7 +8,9 @@
 
 @import UIKit;
 
+#import <PhotoViewController/PhotoViewController.h>
 
-@interface NDPViewController : UIViewController
+@interface NDPViewController : PhotoViewController
+@property (strong, nonatomic) IBOutlet UIScrollView *mainView;
 
 @end

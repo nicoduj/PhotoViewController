@@ -69,6 +69,14 @@
     self.navigationItem.leftBarButtonItem = menuItem;
 
     
+
+}
+
+ -(void) setMyView:(UIScrollView *)myView
+{
+    _myView = myView;
+    _myView.delegate = self;
+    
     UITapGestureRecognizer *doubleTapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scrollViewDoubleTapped:)];
     doubleTapRecognizer.numberOfTapsRequired = 2;
     doubleTapRecognizer.numberOfTouchesRequired = 1;
@@ -79,8 +87,9 @@
     twoFingerTapRecognizer.numberOfTouchesRequired = 2;
     
     [self.myView addGestureRecognizer:twoFingerTapRecognizer];
+    
+    
 }
-
 
 - (void) showImage
 {
