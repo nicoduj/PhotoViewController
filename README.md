@@ -1,6 +1,6 @@
 # PhotoViewController
 
-[![CI Status](http://img.shields.io/travis/Nicolas Dujardin/PhotoViewController.svg?style=flat)](https://travis-ci.org/Nicolas Dujardin/PhotoViewController)
+[![CI Status](http://img.shields.io/travis/nicoduj/PhotoViewController.svg?style=flat)](https://travis-ci.org/nicoduj/PhotoViewController)
 [![Version](https://img.shields.io/cocoapods/v/PhotoViewController.svg?style=flat)](http://cocoapods.org/pods/PhotoViewController)
 [![License](https://img.shields.io/cocoapods/l/PhotoViewController.svg?style=flat)](http://cocoapods.org/pods/PhotoViewController)
 [![Platform](https://img.shields.io/cocoapods/p/PhotoViewController.svg?style=flat)](http://cocoapods.org/pods/PhotoViewController)
