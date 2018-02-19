@@ -10,6 +10,6 @@ language: objective-c
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild clean test -enableCodeCoverage YES -workspace Example/PhotoViewController.xcworkspace -scheme PhotoViewController-Example -destination 'platform=iOS Simulatorr,name=iPhone 7,OS=10.3' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet | xcpretty
+- set -o pipefail && xcodebuild clean test -enableCodeCoverage YES -workspace Example/PhotoViewController.xcworkspace -scheme PhotoViewController-Example -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet | xcpretty
 - pod lib lint
 
