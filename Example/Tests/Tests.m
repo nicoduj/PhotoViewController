@@ -21,7 +21,6 @@ describe(@"Verify that view is loaded", ^{
     });
     
     it(@"Verifying the valid views", ^{
-
         XCTAssertNotNil(pvc.view);
     });
     
